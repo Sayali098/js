@@ -1,0 +1,23 @@
+div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: linear-gradient(pink,aqua);
+
+}
+
+p{
+    height: 100px;
+    width: 600px;
+    font-weight: bold;
+    font-size: 40px;
+line-height: 100px;
+background-image: linear-gradient(orange,rgb(0, 255, 34));
+}
+*{
+    margin: 0;
+    padding: 0;
+}
