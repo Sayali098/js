@@ -1,0 +1,46 @@
+.container{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#stopwatch{
+    font-size: 100px;
+    padding: 10px;
+    color: blue;
+    border-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+#buttons{
+    display: flex;
+}
+
+button{
+    padding: 20px;
+    border: none;
+    background-color: aqua;
+    color: blueviolet;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100px;
+    font-size: larger;
+    transition: all 0.5s;
+    box-shadow: 5px 5px 1px  orangered;
+}
+
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    box-shadow: none;
+    transition: all 0.5s;
+}
