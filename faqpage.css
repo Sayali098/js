@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh ;
+    background-color:lightcoral;
+}
+
+.accordion{
+max-width: 800px;
+}
+
+.accordion .contentbox{
+    position: relative;
+    margin: 10px 20px;
+}
+.accordion .contentbox .label{
+    position: relative;
+    padding: 10px;
+    background-color:green;
+    color: black;
+    cursor: pointer;
+}
+.accordion .contentbox .label::before{
+    content: '+';
+    font-size: 1.5em;
+    top: 50%;
+    right: 20px;
+    position:absolute ;
+    transform: translateY(-50%);
+}
+
+.accordion .contentbox.active .label::before
+{
+    content: '-';
+}
+.accordion .contentbox .content{
+    position: relative;
+    background-color:orange;
+    color: black;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.accordion .contentbox.active .content{
+    height: 150px;
+    padding: 10px;
+}
