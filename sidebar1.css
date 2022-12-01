@@ -1,0 +1,43 @@
+
+body{
+    margin: 0px;
+    background-color: orange;
+    padding: 0px;
+}
+
+.navtoggle{
+    position: absolute;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+right: 20px;
+}
+
+.sidebar{
+    background-color: yellowgreen;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100vh;
+    transform: translate(-100%);
+    transition: transform 0.3s linear 0s;
+}
+
+.show-sidebar{
+    transform: translate(0%) !important;
+}
+.links{
+    margin: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links li a{
+text-decoration: none;
+text-transform: uppercase;
+border-bottom: 25px;
+color: blueviolet;
+font-size: 25px;
+display: inline-block;
+}
